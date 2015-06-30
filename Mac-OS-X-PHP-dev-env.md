@@ -1,7 +1,7 @@
 # Mac OS X - PHP developer environment.
 How to:
 - Homebrew, Composer, Symfony installer
-- NGINX with autostart afret reboot on port *:80
+- NGINX with autostart after reboot on port *:80
 - PHP-FPM (5.6+)
 - NGINX + PHP-FPM + Symfony2 minimal config
 
@@ -44,7 +44,7 @@ Start nginx with launchctl, when your Mac boots up
     sudo cp /usr/local/opt/nginx/*.plist /Library/LaunchDaemons
     sudo launchctl load -w /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 
->You need to put your plist file in `/Library/LaunchDaemons`, not in `~/Library/LaunchAgents` like the Homebrew instructions say to do. You also need to **copy the file over**, not just symlink it - again, going against the Homebrew instructions. Lastly, use the `-w` option with launchctl.
+>**Note**: You need to put your plist file in `/Library/LaunchDaemons`, not in `~/Library/LaunchAgents` like the Homebrew instructions say to do. You also need to **copy the file over**, not just symlink it - again, going against the Homebrew instructions. Lastly, use the `-w` option with launchctl.
 
 ### Configuration
 
