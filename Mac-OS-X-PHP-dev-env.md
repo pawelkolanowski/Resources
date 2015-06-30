@@ -253,7 +253,7 @@ Create symlink to sites-enabled:
 
     sudo ln -s /usr/local/etc/nginx/sites-available/symfony.dev /usr/local/etc/nginx/sites-enabled/symfony.dev
 
-Update your `vi /etc/hosts` file with follow line:
+Update your `/etc/hosts` file with follow line:
 
     127.0.0.1   symfony.dev
 
